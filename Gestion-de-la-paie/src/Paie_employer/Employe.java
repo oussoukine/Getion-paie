@@ -4,18 +4,23 @@ package Paie_employer;
  * Created by HAMALI on 25/10/16.
  */
 public class Employe {
+
+
     private String nom;
-    private String fonct;
+    private String job;
     private double salaire;
 
-    public Employe(String nom, String fonct, double salaire) {
+    public Employe(String nom, String job) {
+
         this.nom = nom;
-        this.fonct = fonct;
-        this.salaire = salaire;
+        this.job = job;
 
 
     }
 
+    public double calculerPaie() {
+        return salaire;
+    }
 
     public double getSalaire() {
         return salaire;
@@ -25,13 +30,13 @@ public class Employe {
         this.salaire = salaire;
     }
 
-    public String getFonct() {
+    public String getJob() {
 
-        return fonct;
+        return job;
     }
 
-    public void setFonct(String fonct) {
-        this.fonct = fonct;
+    public void setJob(String job) {
+        this.job = job;
     }
 
     public String getNom() {
@@ -42,4 +47,12 @@ public class Employe {
     public void setNom(String nom) {
         this.nom = nom;
     }
+
+
+
+    public String afficheCheque() {
+        return "Employe  " + nom + "\njob  " + job
+                + "salaire\n    " + salaire + "";
+    }
 }
+
