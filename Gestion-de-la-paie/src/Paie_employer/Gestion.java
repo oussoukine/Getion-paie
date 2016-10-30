@@ -1,4 +1,13 @@
-class Gestion{
+package Paie_employer
+
+
+
+
+
+
+
+
+public class Gestion{
 
 public static void main(String args[]){
 Employe ep[] = new Employe[3];
