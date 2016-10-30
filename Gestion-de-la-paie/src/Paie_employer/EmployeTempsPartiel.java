@@ -3,11 +3,36 @@ package Paie_employer;
 /**
  * Created by HAMALI on 25/10/16.
  */
-public class EmployeTempsPartiel extends Employe {
+public class EmployePleinTemps extends Employe {
+    private double montantheb;
+    private double prime;
 
+    public double getPrime() {
+        return prime;
+    }
 
-    public EmployeTempsPartiel(String nom, String fonct, double salaire)
-    {
-        super(nom, fonct, salaire);
+    public void setPrime(double prime) {
+        this.prime = prime;
+    }
+
+    public double getMontantheb() {
+
+        return montantheb;
+    }
+
+    public void setMontantheb(double montantheb) {
+        this.montantheb = montantheb;
+    }
+
+    public EmployePleinTemps(String nom, String job
+    ) {
+        super(nom, job);
+
+    }
+
+    @Override
+    public double calculerPaie() {
+        setSalaire((montantheb*4+prime));
+        return getSalaire();
     }
 }
