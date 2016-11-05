@@ -48,11 +48,10 @@ public class Employe {
         this.nom = nom;
     }
 
+public void afficheCheque(){
+    system.out.println("payer à l'ordre de"+non+"("fonction)"***+salaire;
 
-
-    public String afficheCheque() {
-        return "Employe  " + nom + "\njob  " + job
-                + "salaire\n    " + salaire + "";
+    
     }
 }
 
